@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>MyTestHTML</title>
+        <link rel="stylesheet" href="todos.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="todo-header"><p>Todo List</p></div>
+            <div class="todo-body">
+                <form id="todo-form" name="form">
+                    <input class="form-c" type="text" name="todoinp" id="todoinp" placeholder="Enter a todo">
+                    <br>
+                    <button type="submit" class="button-style">Add Todo</button>
+                </form>
+                <hr>
+            </div>
+            <div class="todo-body">
+                <h4 id="tasks-title" class="todos">My Todos</h4>
+                <div>
+                    <input class="form-c" type="text" name="todosearch" id="todosearch" placeholder="Search a Todo">
+
+                </div>
+                <hr>
+                <ul class="todo-list">
+                    <!--
+                        <li>
+                            Todo 1
+                            <a href = "#" class="delete-item">
+                                Remove
+                            </a>
+                        </li>
+                    -->
+                </ul>
+                <hr>
+                <button type = "submit" class="button-style">Clear all Tasks</button>
+                <hr>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
