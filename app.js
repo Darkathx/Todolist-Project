@@ -72,8 +72,12 @@ function loadTodosToUI() {
 //adding new todo lines
 function addTodo(e) {
     const newTodo = todoInp.value.trim();
+    const todos = getTodosFromStorage();
     if(newTodo === "") {
         showAlert("danger", "Please do not enter an empty todo!");
+    }
+    else if(todos.indexOf(newTodo) !== -1) {
+        showAlert("danger", "Please give a different name than existing todos!");
     }
     else {
         UIadder(newTodo);
